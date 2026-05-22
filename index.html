@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>CK Lottery Clone</title>
+</head>
+<body>
+  <!-- Login/Register -->
+  <div id="loginDiv">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="pass" placeholder="Password">
+    <button onclick="register()">Register</button>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="gameDiv" style="display:none;">
+    <p id="coins">Coins: 100</p>
+    <input type="text" id="numbers" placeholder="Pick 5 numbers (1-50, comma separated)">
+    <button onclick="playLottery()">Play</button>
+    <p id="result"></p>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+  </html>
